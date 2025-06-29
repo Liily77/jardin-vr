@@ -3,6 +3,8 @@
 Un projet immersif réalisé avec **A-Frame** pour explorer un jardin botanique en réalité virtuelle.  
 Ce projet a été réalisé dans le cadre d’une collaboration à trois, et fait partie de mon portfolio web interactif.
 
+Lien : https://lydianeghad.alwaysdata.net/jardin-botanique-vr/index.html
+
 ## 🎯 Objectif
 
 Créer une scène 3D interactive permettant aux visiteurs de :
