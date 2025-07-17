@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Sol Gazon Naturel</title>
+  <script src="https://aframe.io/releases/1.7.0/aframe.min.js"></script>
+</head>
+<body>
+  <a-scene>
+    <a-assets>
+      <img id="ground" src="/models/grass-j.jpg">
+        
+    </a-assets>
+
+    <a-plane 
+            rotation="-90 0 0" 
+            width="100" 
+            height="100"
+            material="color:#ffffff; src:#ground; repeat: 100 100" 
+            >
+    </a-plane>
+
+    <a-sky color="#cceeff"></a-sky>
+  </a-scene>
+</body>
+</html>

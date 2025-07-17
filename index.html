@@ -20,14 +20,18 @@
     
 
     <!-- Sol -->
-    <a-plane position="0 0 0"
-             rotation="-90 0 0"
-             width="25"
-             height="25"
-             src="models/grass.png"
-             material="repeat: 8 8; side: double"
-             class="clickable">
+
+     <a-plane 
+            position="0 0 0"
+            rotation="-90 0 0" 
+            width="100" 
+            height="100"
+            src="models/grass-j.jpg"
+            material="repeat: 100 100; side: double" 
+            class="clickable">
+            >
     </a-plane>
+
 
     <!-- Ciel -->
     <a-sky src="models/sky.png" rotation="0 -90 0"></a-sky>
@@ -50,11 +54,18 @@
     </a-entity>
 
     <!-- Lumières -->
-    <a-entity light="type: ambient; intensity: 1; color: #ffffff"></a-entity>
-    <a-entity light="type: directional; intensity: 0.8; color: #ffffff" position="3 5 1"></a-entity>
-    <a-entity light="type: point; intensity: 1.5; distance: 50; decay: 2; color: #ffffff" position="13 20 13"></a-entity>
+    <a-entity light="type: ambient; intensity: 0.5; color: #ffffff"></a-entity>
 
-  
+    <a-entity light="type: directional; intensity: 0.6; color: #ffffff"
+              position="-10 30 20"
+              rotation="-45 -30 0"
+              shadow="cast: true">
+    </a-entity>
+    <a-entity light="type: point; intensity: 0.3; distance: 40; decay: 1.5; color: #ffffff"
+          position="0 10 0">
+    </a-entity>
+
+
    <!-- Banc  -->
   <a-entity 
     gltf-model="models/bridge.glb" 
