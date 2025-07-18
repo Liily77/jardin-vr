@@ -63,7 +63,7 @@
   <a-scene cursor="rayOrigin: mouse" raycaster="objects: .clickable" embedded>
     
 
-    <!-- Sol -->
+    <!-- Sol 
     <a-plane position="0 0 0"
              rotation="-90 0 0"
              width="25"
@@ -72,6 +72,58 @@
              material="repeat: 8 8; side: double"
              class="clickable">
     </a-plane>
+    <a-plane 
+            position="0 0 0"
+            rotation="-90 0 0" 
+            width="100" 
+            height="100"
+            src="models/grass-j.jpg"
+            material="repeat: 100 100; side: double" 
+            class="clickable">
+            >
+
+    </a-plane>-->
+
+    <a-entity >
+      <a-plane 
+        position="-100 0 0"
+        rotation="-90 0 0"
+        width="200" 
+        height="200"
+        src="models/grass-j.jpg"
+        material="repeat: 100 100; side: double"
+        class="clickable">
+      </a-plane>
+      <a-plane 
+        position="100 0 0"
+        rotation="-90 0 0"
+        width="200" 
+        height="200"
+        src="models/grass-j.jpg"
+        material="repeat: 100 100; side: double"
+        class="clickable">
+      </a-plane>
+      <a-plane 
+        position="0 0 -100"
+        rotation="-90 0 0"
+        width="200" 
+        height="200"
+        src="models/grass-j.jpg"
+        material="repeat: 100 100; side: double"
+        class="clickable">
+      </a-plane>
+      <a-plane 
+        position="0 0 100"
+        rotation="-90 0 0"
+        width="200" 
+        height="200"
+        src="models/grass-j.jpg"
+        material="repeat: 100 100; side: double"
+        class="clickable">
+      </a-plane>
+    </a-entity>
+
+
 
     <!-- Ciel -->
     <a-sky src="models/sky.png" rotation="0 -90 0"></a-sky>
@@ -108,10 +160,20 @@
     </a-entity>
 
     
-    <!-- Lumières -->
+    <!-- Lumières 
     <a-entity light="type: ambient; intensity: 1; color: #ffffff"></a-entity>
     <a-entity light="type: directional; intensity: 0.8; color: #ffffff" position="3 5 1"></a-entity>
-    <a-entity light="type: point; intensity: 1.5; distance: 50; decay: 2; color: #ffffff" position="13 20 13"></a-entity>
+    <a-entity light="type: point; intensity: 1.5; distance: 50; decay: 2; color: #ffffff" position="13 20 13"></a-entity>-->
+
+    <a-entity light="type: ambient; intensity: 0.5; color: #ffffff"></a-entity>
+    <a-entity light="type: directional; intensity: 0.6; color: #ffffff"
+              position="-10 30 20"
+              rotation="-45 -30 0"
+              shadow="cast: true">
+    </a-entity>
+    <a-entity light="type: point; intensity: 0.3; distance: 40; decay: 1.5; color: #ffffff"
+          position="0 10 0">
+    </a-entity>
 
      <!-- texte bienvenue -->
     <a-entity id="welcome-text" position="0 3 10" visible="false" look-at="#camera">
