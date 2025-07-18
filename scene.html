@@ -46,6 +46,11 @@
       transition: background 0.3s ease;
     }
 
+    .a-enter-vr .teleportable {
+  opacity: 0.8;
+  color: #00ffcc;
+}
+
   </style>
 </head>
 <body>
@@ -260,7 +265,7 @@
 
         setTimeout(() => {
           container.setAttribute('visible', false);
-        }, 5000);
+        }, 10000);
       }
 
     });
